@@ -1,0 +1,11 @@
+{% extends "admin/index.html" %}
+{% load static %}
+
+{% block extrastyle %}
+{{ block.super }}
+<style>
+    body {
+        background-color: {{ theme.primary_color }} !important;
+    }
+</style>
+{% endblock %}
